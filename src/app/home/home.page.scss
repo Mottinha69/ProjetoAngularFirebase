@@ -1,27 +1,20 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.full-height{
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.plano-de-fundo{
+  --background: url('https://images.pexels.com/photos/4775441/pexels-photo-4775441.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center / cover;
+  --background-repeat:no-repeat;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.titulo{
+  color:white ;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px  black;
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }

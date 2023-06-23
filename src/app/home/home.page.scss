@@ -1,20 +1,20 @@
-.full-height{
-  height: 100vh;
-  overflow: hidden;
+ion-menu::part(backdrop) {
+  background-color: rgba(251, 146, 146, 0.5);
+}
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 16px rgba(254, 51, 51, 0.18);
+}
+
+.title{
+  text-align: center;
+  font-size: 4vh;
+}
+.centro{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
-
-.plano-de-fundo{
-  --background: url('https://images.pexels.com/photos/4775441/pexels-photo-4775441.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center / cover;
-  --background-repeat:no-repeat;
-}
-
-.titulo{
-  color:white ;
-  font-size: 2rem;
-  text-shadow: 2px 2px 2px  black;
-
+.imagem{
+  width: 100%;
 }

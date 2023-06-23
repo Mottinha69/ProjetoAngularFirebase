@@ -1,26 +1,96 @@
 <ion-content [fullscreen]="true" class="plano-de-fundo">
-  <ion-row class="ion-justify-content-center">
-    <ion-col size="12" size-lg="8" size-xl="6" class="full-height">
-
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-title>Super Mário</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/home">home</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/super-mario">Super Mário</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/princesa-peach">Princesa Peach</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/luigi">Luigi</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/yoshi">Yoshi</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/bowser">Bowser</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/toad">Toad</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/wario">Wario</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/waluigi">Waluigi</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/princesa-daisy">Princesa Daisy</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/rosalina">Rosalina</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/donkey-kong">Donkey kong</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/diddy-kong">Diddy Kong</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/lakitu">Lakitu</ion-button>
+      <ion-button  color="danger" expand="full" shape="round" routerLink="/shy-guy">Shy Guy</ion-button>
+      <ion-button  color="warning" expand="full" shape="round" routerLink="/sobre">Sobre</ion-button>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <!-- Corpo -->
+    <ion-content class="ion-padding">
       <ion-row>
-        <ion-col size="12" class="ion-text-center">
-          <ion-label class="titulo">Econtre o seu melhor amigo!</ion-label>
+        <ion-col class="centro">
+          <ion-item>
+            <h1 class="title">Nintendo</h1> 
+          </ion-item>
         </ion-col>
       </ion-row>
-
       <ion-row>
-        <ion-col size="12" class="ion-text-center">
-          <ion-button color="dark" shape="round" routerLink="/login">Login</ion-button>
+        
+        <ion-col size-lg="4" size-md="8" size="12">
+          <ion-card>
+            <img  class="imagem"alt="Silhouette of mountains" src="data:image/jpeg;base64,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" />
+            <ion-card-header>
+              <ion-card-title>Criador</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Mario foi criado pelo lendário game designer Shigeru Miyamoto, 
+                que usou Popeye como inspiração para criar o encanador que precisa 
+                salvar Paulina das garras de um gorila raivoso em Donkey Kong, de 1991.</p>
+            </ion-card-content>
+          </ion-card>
         </ion-col>
+
+        <ion-col size-lg="4" size-md="8" size="12">
+          <ion-card>
+            <img  class="imagem"alt="Silhouette of mountains" src="https://blogdobozo.files.wordpress.com/2008/08/the-evolution-of-mario-1981-king-kong-1985-super-m1.jpg"/>
+            <ion-card-header>
+              <ion-card-title>Onde foi criado</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>(スーパーマリオブラザーズ Sūpā Mario Burazāzu) é um jogo eletrônico de
+                plataforma desenvolvido pela Nintendo Research & Development 4 e publicado
+                pela Nintendo para o Famicom em 1985 no Japão e para o Nintendo Entertainment
+                System (NES) em 1985 e 1987 na América do Norte e Europa, respectivamente.</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size-lg="4" size-md="8" size="12">
+          <ion-card>
+            <img  class="imagem"alt="Silhouette of mountains" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAh1BMVEXmABL////lAAD2wMH52NnyoaP1t7nmAA/jAADmAAn74uP1urv85ebnIin/+fr50tPzpqj3xcb4zM3+9vbviIv0sbPzqqzue37oLTT86urpRUnynZ/wjpDrXmLueHvvg4bpPkPtb3LqTlHmFyDqVFf63N3oOD3xl5nsZmrnGyPtcXTrX2PoLzZTweH2AAAEL0lEQVR4nO3Za5faNhAGYGsMyLZssDH3yy6XZYE0///3dWYEBrY9aZqDS4/yPh8IsKzJvJE0khNFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKGx1BL76sr+A1zmtqw6T1eVW770q6trmaXd0LSm2oU9AiltMTwNMOQBSAtfZObK7pOVLtNL9zfB5kc7KbBepS11jlVfrr8INL90L9WNW+uQ3NF78g1R2s71X4w6XNuIw7PNLsM/oV9rmV/2KjymU1rxVwyCHH504tImXJq1eZblEVdOVZ7lKQ2z7PCl5J9IlJZ5Ni+a/OhjtOJ/mDF/yTrE/OjA654UZlPfI/mtnJ8QzeXx4bPppJyM/iEETapoJmp6HHdXZKk2phNgfGnB1b7f4jMfFFGm8cWdTjPhZDRZSmQOJv7DDyvZ3WS9xWcptbZ4Gy45cRrxu/vwVj96l6g0HR9fzUNF4+O0JKmmg6aRqXUPMpBXn4WucLcGqxcTl/j4x7sNv1yNSp61evFpeMNPqs20LK2wk5suXUbfOI4dURVXxzeex1VB71PZHE63tJZu059wTxjxjze8584lGtrx+8NK46N1Jmk7S7NILi8LwiTA+Lja+BbfYWPM7BKfrn2kQ3IoW7dCX/DYO3IsSdo39d5vSTq8fJolaRM6Lo1+lCdrL+HP94tLM2++JyjEQ8fd4ssSZzqJj4/HS18Tq3nm+pOXxrfTTXASc25JT1dO/iVe2chvH+X5+VM7rVzcD+2IYt+WAiOjorqLTyI6HR7jG/huUvsXkpvhPY4OSL/Qkczq7Rs/lEQT2SKPm/jMRhuGPA1x9HG1+UN8U1P/TXz5LT5Z+HrlhM/H5afENPPxfVvd4kurW3wn31Xm8sPX1toCrdw2nZenmp5CfhSfzM4d0WK9Punad41vezf6ylt8Mxl9ejL8Fl58NuK6Vs2+j+NLZz+Ojza6O5RoDsldfG/Ul2VU5/b5zA9/EA2uZzVpNyYN8K6flNiX7qjxyTymrnnsvHxcuH8hW8Uq4ZDnVkff91Q3j1P6kFntfOc9SXAL/ozfU8pvDsMbfHIoNX5RtzZ2TpYnS865OKWJcz1upD135PhK56SrOrfkFwuZlPWS933vrhcXltb8B8/VopfPxyt+fubtnozC+ZF846h0wr+61jZoaSWXaa+HB3t/x+Xy5tcXe2pOHdfDh95dudzja57L2Ev1JBJg3xV6nDdD++/uTtmfWMf8R/i6A38Y/KW/3v8e+V4x2Tzl5vJfLMZ6Ui7CHHyMznMNsN+p4ierOnqn3sz3waYni1NpWtWl8O5V3bG0L+u2squ7UcBDz+NG+TntjntPNu5Ov1PYQ++qpf+o/C2yAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgN/Nn5ubNQEtMU/PAAAAAElFTkSuQmCC"/>
+            <ion-card-header>
+              <ion-card-title>Nintendo Research & Development 1</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>“Mario Bros” é um jogo eletrônico lançado em 4 de abril de 1983, criado por
+                 Shigeru Miyamoto e desenvolvido pela Nintendo Research & Development 1.</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
       </ion-row>
 
-      <ion-row>
-        <ion-col size="12" class="ion-text-center">
-          <ion-button color="medium" shape="round" routerLink="/register">Registra-se</ion-button>
-        </ion-col>
-      </ion-row>
 
-      
-    </ion-col>
-  </ion-row>
+    </ion-content>
+  </div>
+
+
 </ion-content>

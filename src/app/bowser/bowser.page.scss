@@ -1,0 +1,26 @@
+ion-menu::part(backdrop) {
+    background-color: rgba(251, 146, 146, 0.5);
+}
+ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px rgba(254, 51, 51, 0.18);
+}
+
+
+.title{
+    text-align: center;
+    font-size: 4vh;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+}
+.conteudo{
+    display: flex;
+   justify-content: center;
+}
+.espaco{
+    margin-top: 2vh;
+    color: black;
+}

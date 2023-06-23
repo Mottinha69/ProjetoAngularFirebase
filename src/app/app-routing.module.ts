@@ -12,37 +12,67 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    path: 'super-mario',
+    loadChildren: () => import('./super-mario/super-mario.module').then( m => m.SuperMarioPageModule)
   },
   {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+    path: 'princesa-peach',
+    loadChildren: () => import('./princesa-peach/princesa-peach.module').then( m => m.PrincesaPeachPageModule)
   },
   {
-    path: 'cadastrar-animal',
-    loadChildren: () => import('./cadastrar-animal/cadastrar-animal.module').then( m => m.CadastrarAnimalPageModule)
+    path: 'luigi',
+    loadChildren: () => import('./luigi/luigi.module').then( m => m.LuigiPageModule)
   },
   {
-    path: 'visualizar-animal',
-    loadChildren: () => import('./visualizar-animal/visualizar-animal.module').then( m => m.VisualizarAnimalPageModule)
+    path: 'yoshi',
+    loadChildren: () => import('./yoshi/yoshi.module').then( m => m.YoshiPageModule)
   },
   {
-    path: 'consultar-animal',
-    loadChildren: () => import('./consultar-animal/consultar-animal.module').then( m => m.ConsultarAnimalPageModule)
+    path: 'bowser',
+    loadChildren: () => import('./bowser/bowser.module').then( m => m.BowserPageModule)
   },
   {
-    path: 'editar-animal',
-    loadChildren: () => import('./editar-animal/editar-animal.module').then( m => m.EditarAnimalPageModule)
+    path: 'toad',
+    loadChildren: () => import('./toad/toad.module').then( m => m.ToadPageModule)
   },
   {
-    path: 'remover-animal',
-    loadChildren: () => import('./remover-animal/remover-animal.module').then( m => m.RemoverAnimalPageModule)
+    path: 'wario',
+    loadChildren: () => import('./wario/wario.module').then( m => m.WarioPageModule)
   },
   {
-    path: 'gerenciar-animal',
-    loadChildren: () => import('./gerenciar-animal/gerenciar-animal.module').then( m => m.GerenciarAnimalPageModule)
+    path: 'waluigi',
+    loadChildren: () => import('./waluigi/waluigi.module').then( m => m.WaluigiPageModule)
   },
+  {
+    path: 'princesa-daisy',
+    loadChildren: () => import('./princesa-daisy/princesa-daisy.module').then( m => m.PrincesaDaisyPageModule)
+  },
+  {
+    path: 'rosalina',
+    loadChildren: () => import('./rosalina/rosalina.module').then( m => m.RosalinaPageModule)
+  },
+  {
+    path: 'donkey-kong',
+    loadChildren: () => import('./donkey-kong/donkey-kong.module').then( m => m.DonkeyKongPageModule)
+  },
+  {
+    path: 'diddy-kong',
+    loadChildren: () => import('./diddy-kong/diddy-kong.module').then( m => m.DiddyKongPageModule)
+  },
+  {
+    path: 'lakitu',
+    loadChildren: () => import('./lakitu/lakitu.module').then( m => m.LakituPageModule)
+  },
+  {
+    path: 'shy-guy',
+    loadChildren: () => import('./shy-guy/shy-guy.module').then( m => m.ShyGuyPageModule)
+  },
+  {
+    path: 'sobre',
+    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+  },
+  
+  
 ];
 
 @NgModule({
